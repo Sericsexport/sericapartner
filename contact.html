@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Serica Nexus Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f3f0;
+      color: #1c3d2e;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background-color: #e7efe9;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1c3d2e;
+      font-weight: 600;
+      background-color: #d89ea4;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #e8b1b6;
+    }
+    main {
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 30px;
+      background-color: #d89ea4;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e8b1b6;
+    }
+    .alternative-contact {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+    }
+    .alternative-contact a {
+      color: #1c3d2e;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Serica Nexus Partners</h1>
+    <nav>
+      <a href="home.html">Accueil</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contactez-nous</h1>
+    <form action="#" method="post">
+      <label for="name">Nom & Prénom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="company">Compagnie (Facultatif)</label>
+      <input type="text" id="company" name="company">
+
+      <label for="message">Demande</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="alternative-contact">
+      <p>Ou contactez-nous directement par mail : <a href="mailto:contact@sericanexus.com">contact@sericanexus.com</a></p>
+    </div>
+  </main>
+</body>
+</html>
